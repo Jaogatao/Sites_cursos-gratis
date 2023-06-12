@@ -4,20 +4,21 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-  <link rel="stylesheet" href="css\style.css">
+  <link rel="stylesheet" href="style2.css">
   <title>Home</title>
 </head>
 <body>
   <header style="background-color: #44E690;">
     <div class="logo-photo-container">
       <div class="foto">
-        <img src="imagens/unnamed.jpg" alt="Foto" style="border-radius: 50px;">
+        <button onclick="login()"><img src="imagens/unnamed.jpg" alt="Foto" style="border-radius: 50px;"> </button>
+        
       </div>
       <div class="logo">
         <img src="imagens/logofigma.png" alt="Logo">
       </div>
       <div class="dropdown">
-        <button onclick="window.location.href=''" style="background-color: transparent; border: none;">
+        <button onclick='cursoselecionado()' style="background-color: transparent; border: none;">
           <img src="imagens/1077035.png" alt="Favoritos" style="height: 25px; width: 25px;">
         </button>
         <select>
@@ -109,7 +110,8 @@
   <div class="image-buttons-container" style="width: 100%; overflow-x: auto; white-space: nowrap; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);">
     <div class="image-buttons">
       <div class="image-button-container" style="background-color: #44E690">
-        <img src="imagens/imagem_2023-05-29_113742911.png" alt="Python" style="width: 100%; border-radius: 10px;">
+        <button onclick="favoritos()"> <img src="imagens/imagem_2023-05-29_113742911.png" alt="Python" style="width: 100%; border-radius: 10px;"></button>
+       
         <p>Python 3 - Mundo 1 [40 horas]</p>
       </div>
       <div class="image-button-container" style="background-color: #44E690;">
@@ -122,5 +124,6 @@
       </div>
     </div>
   </div>
+  <script src="index.js"></script>
 </body>
 </html>
